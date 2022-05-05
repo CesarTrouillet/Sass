@@ -1,0 +1,108 @@
+@import "variables/variables";
+
+.login-page {
+    width: 100%;
+    padding: 15% 0 0;
+    margin: auto;
+}
+.form {
+    position: relative;
+    z-index: 1;
+    background: #FFFFFF;
+    border-radius: 8px;
+    max-width: 360px;
+    margin: 0 auto 100px;
+    padding: 45px;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgba(252, 246, 246, 0.692), 0 5px 5px 0 rgba(252, 243, 243, 0.589);
+        input {
+        font-family: "Roboto", sans-serif;
+        outline: 0;
+        background: #f2f2f2;
+        border-radius: 5px;
+        width: 100%;
+        border: 0;
+        margin: 0 0 15px;
+        padding: 15px;
+        box-sizing: border-box;
+        font-size: $tamaño-fuente;
+    }
+}
+
+.linkLogin {
+    font-family: "Roboto", sans-serif;
+    display: block;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: rgb(27, 34, 78);
+    border-radius: 5px;
+    border: 2px solid rgb(191, 197, 235);
+    letter-spacing: 2px;
+    text-align: center;
+    position: relative;
+    transition: all .35s;
+        &:hover {
+            background-color: $color-verde;
+        }
+}
+
+a span{
+    position: relative;
+    z-index: 2;
+    &::after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #76eb59;
+    transition: all .35s;
+    }
+    &:hover {
+        color: rgb(27, 34, 78);
+    }
+}
+
+
+a:hover:after{
+    width: 100%;
+}
+
+
+button {
+    background-color: $color-verde;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 8px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: $tamaño-fuente;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+body {
+    background-image: url(../images/starBackground.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Roboto", sans-serif;
+}
+* {
+    margin: 0;
+}
+
+.form .message {
+    margin: 15px 0 0;
+    color: #b3b3b3;
+    font-size: 12px;
+}
+
+.form .register-form {
+    display: none;
+}
